@@ -1,13 +1,13 @@
-
+import styles from '../styles/Login.module.css'
 
 
 function Login() {
   return (
-    <div>
-      <div>
+    <div className={styles.container}>
+      <div className="title">
         <h2>Sign In</h2>
       </div>
-      <form>
+      <form className="form">
         <label htmlFor="email">Email</label>
         <input
           id="email"
@@ -18,6 +18,9 @@ function Login() {
         />
         <label htmlFor="password">Password</label>
         <input id="password" name="password" type="password" />
+        <button type="submit" className="but">
+          Login
+        </button>
       </form>
     </div>
   );
