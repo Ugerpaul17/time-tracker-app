@@ -4,21 +4,28 @@ import styles from '../styles/Login.module.css'
 function Login() {
   return (
     <div className={styles.container}>
-      <div className="title">
+      <div className={styles.title}>
         <h2>Sign In</h2>
       </div>
-      <form className="form">
-        <label htmlFor="email">Email</label>
+      <form className={styles.form}>
         <input
           id="email"
           name="email"
           type="text"
+          placeholder="Email"
           autoComplete="email"
           required
+          className={styles.inputBoxEmail}
         />
-        <label htmlFor="password">Password</label>
-        <input id="password" name="password" type="password" />
-        <button type="submit" className="but">
+        <input
+          id="password"
+          name="password"
+          placeholder="Password"
+          type="password"
+          required
+          className={styles.inputBoxEmail}
+        />
+        <button type="submit" className={styles.but}>
           Login
         </button>
       </form>
