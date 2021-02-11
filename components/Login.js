@@ -1,38 +1,23 @@
 import styles from '../styles/Login.module.css'
+import { Form,  Button } from 'react-bootstrap';
 
 
 function Login() {
   return (
     <div className={styles.container}>
-      <div className={styles.title}>
+      {/* <div className={styles.title}>
         <h2>Sign In</h2>
-      </div>
-      <div>
-        <form className={styles.form}>
-          <input
-            id="email"
-            name="email"
-            type="text"
-            placeholder="Email"
-            autoComplete="email"
-            required
-            className={styles.inputBoxEmail}
-          />
-          <input
-            id="password"
-            name="password"
-            placeholder="Password"
-            type="password"
-            required
-            className={styles.inputBoxEmail}
-          />
-          <div>
-            <button type="submit" className={styles.but}>
-              Login
-            </button>
-          </div>
-        </form>
-      </div>
+      </div> */}
+      <Form>
+        <Form.Group className={styles.group}>
+          <Form.Control placeholder="Email" />
+          <Form.Group />
+          <Form.Group>
+            <Form.Control placeholder="Password" />
+          </Form.Group>
+            <Button>Submit</Button>
+        </Form.Group>
+      </Form>
     </div>
   );
 }
