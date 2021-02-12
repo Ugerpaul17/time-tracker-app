@@ -22,7 +22,7 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/user">
+            <Link href="/users">
               <a className="nav-link">User</a>
             </Link>
           </li>
