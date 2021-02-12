@@ -1,4 +1,5 @@
 import Layout from './Layout';
+import DateTime from './DateTime';
 
 function Dashboard() {
 
@@ -6,6 +7,7 @@ function Dashboard() {
     return (
         <div>
             <Layout>
+            <DateTime/>
     
             </Layout>
         </div>
