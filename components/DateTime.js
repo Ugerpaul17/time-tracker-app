@@ -1,23 +1,27 @@
 import React, { useState, useEffect } from 'react';
+import styles from '../styles/DateTime.module.css';
+import { Button } from "react-bootstrap";
+
 
 
 export const DateTime = () => {
     
     const [date, setDate] = useState(new Date());
 
+  
     useEffect(() => {
-        const timer = setInterval(() => setDate(new Date()), 1000)
+        const timer = setInterval(() => setDate(new Date()), 1000);
         return function cleanup() {
-            cleanup(timer)
+            clearInterval(timer)
         }
     },[]);
 
-    return ( 
-        <div>
-            <p>Time : {date.toLocaleTimeString()}</p>
-            <p>Date : {date.toLocaleDateString()}</p>
-        </div>
-        
+    return (
+      <div className={styles.dateTime}>
+        <p className={styles.time}> {date.toLocaleTimeString()}</p>
+        <p className={styles.date}> {date.toLocaleDateString()}</p>
+        <Button>Clock In</Button>
+      </div>
     );
 }
 
