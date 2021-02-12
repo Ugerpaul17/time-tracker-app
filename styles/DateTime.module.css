@@ -1,0 +1,23 @@
+.dateTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+/* @font-face{
+ font-family:'digital-clock-font';
+ src: url('put_the_location_to_your_font.ttf or .otf');
+} */
+
+.time {
+    font-size: 80px;
+    font-family: 'digital', sans-serif;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 40px;
+    font-weight: bold;
+}
