@@ -8,7 +8,6 @@ function Dashboard() {
         <div>
             <Layout>
             <DateTime/>
-    
             </Layout>
         </div>
     )
